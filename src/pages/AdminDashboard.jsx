@@ -14,15 +14,14 @@ const AdminDashboard = () => {
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState(null);
 
-    // Security check - RELAXED FOR DEMO
-    // In production, this should be: if (!user || (user.email !== 'gerles.medina@apuflow.com' && user.role !== 'admin'))
-    if (!user) {
+    // Security check
+    if (!user || (user.email !== 'gerles.medina@apuflow.com' && user.role !== 'admin')) {
         return (
             <div className="container" style={{ padding: '4rem', textAlign: 'center' }}>
                 <h2>Acceso Denegado</h2>
-                <p>Debes iniciar sesión para ver esta página.</p>
-                <button onClick={() => navigate('/login')} className="btn-primary" style={{ marginTop: '1rem' }}>
-                    Iniciar Sesión
+                <p>No tienes permisos para ver esta página.</p>
+                <button onClick={() => navigate('/')} className="btn-primary" style={{ marginTop: '1rem' }}>
+                    Volver al Inicio
                 </button>
             </div>
         );
@@ -94,10 +93,6 @@ const AdminDashboard = () => {
                 </div>
                 Panel de Administración
             </h1>
-
-            <div style={{ background: 'rgba(239, 68, 68, 0.1)', border: '1px solid #ef4444', color: '#ef4444', padding: '1rem', borderRadius: '8px', marginBottom: '2rem' }}>
-                <strong>Modo Demo:</strong> El acceso de administrador está abierto para pruebas. En producción, esto estará restringido.
-            </div>
 
             <div className="glass-panel" style={{ padding: '2rem', marginBottom: '2rem' }}>
                 <h2 style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>Buscar Estudiante</h2>

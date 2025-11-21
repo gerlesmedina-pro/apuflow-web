@@ -161,9 +161,9 @@ const InstructorProfile = () => {
                             </div>
 
                             <p style={{ color: 'var(--text-muted)', lineHeight: '1.7', marginBottom: '2rem', fontSize: '1.05rem' }}>
-                                Ingeniero Civil (UNI) y Maestro en Ciencias con mención en Ingeniería de Agua (UTEC). Especialista en modelamiento hidráulico avanzado con una sólida trayectoria en el diseño de estructuras hidráulicas y modelamiento numérico de flujos multifasicos.
+                                Ingeniero Civil (UNI) y Maestro en Ciencias con mención en Ingeniería de Agua (UTEC). Especialista en modelamiento hidráulico avanzado con una sólida trayectoria en el diseño de estructuras hidráulicas y modelamiento numérico de flujos multifasicos. Actualmente docente en el Posgrado FIC-UNI.
                                 <br /><br />
-                                Ex-Ingeniero Investigador en el CITA-UTEC y miembro activo de la IAHR. He llevado la simulación numérica a la práctica real, combinando Hidráulica Fluvial, HPC y Cloud Computing para resolver los retos más complejos de la ingeniería moderna.
+                                Ex-Ingeniero Investigador en el CITA-UTEC y miembro activo de la IAHR. Ha llevado la simulación numérica a la práctica real, combinando Hidráulica Fluvial, HPC y Cloud Computing para resolver los retos más complejos de la ingeniería moderna.
                             </p>
                             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', marginBottom: '3rem' }}>
                                 {skills.map((skill, idx) => (
